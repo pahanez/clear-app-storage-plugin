@@ -1,0 +1,59 @@
+<idea-plugin>
+    <id>com.clearstorage.clear-storage-plugin</id>
+    <name>Clear App Storage Before Deploy</name>
+    <version>1.0.0</version>
+    <vendor>Pavel Indziukou</vendor>
+
+    <description><![CDATA[
+<h2>Clear App Storage Before Deploy</h2>
+<p>
+    Adds a convenient <b>toggle button to the main toolbar</b> that controls Android Studio's
+    built-in "Clear app storage before deployment" option in the Run/Debug Configuration.
+</p>
+<p>
+    No more navigating through Run Configuration settings every time you need to toggle this flag —
+    just click the toolbar button.
+</p>
+
+<h3>Features</h3>
+<ul>
+    <li>One-click toggle directly from the main toolbar</li>
+    <li>Controls the native Android Studio "Clear app storage before deployment" setting</li>
+    <li>Visual icon change indicates current state (enabled/disabled)</li>
+    <li>Works with any Android App run configuration</li>
+    <li>Supports both new and classic UI</li>
+</ul>
+
+<h3>Usage</h3>
+<ol>
+    <li>Look for the toggle button in the right side of the main toolbar</li>
+    <li>Click to toggle clearing app storage on or off</li>
+    <li>The icon changes to reflect the current state</li>
+    <li>Run your app — storage will be cleared automatically before deployment when enabled</li>
+</ol>
+    ]]></description>
+
+    <change-notes><![CDATA[
+<h3>1.0.0</h3>
+<ul>
+    <li>Initial release</li>
+    <li>Toolbar toggle for "Clear app storage before deployment" flag</li>
+    <li>Support for new UI and classic UI toolbars</li>
+</ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>org.jetbrains.android</depends>
+
+    <actions>
+        <action class="com.clearstorage.ClearStorageToggleAction" description="Toggle clearing app storage before each deployment"
+            icon="AllIcons.Actions.GC"
+            id="ClearStorage.Toggle"
+            text="Clear App Storage Before Deploy">
+            <add-to-group anchor="first" group-id="MainToolbarRight" />
+            <add-to-group anchor="first" group-id="ToolbarRunGroup" />
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij"></extensions>
+</idea-plugin>

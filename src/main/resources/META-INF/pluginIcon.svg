@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- Trash can body -->
+  <rect x="10" y="14" width="16" height="18" rx="2" fill="#A0A0A0" opacity="0.9"/>
+  <!-- Trash can lid -->
+  <rect x="8" y="11" width="20" height="3" rx="1.5" fill="#888888"/>
+  <!-- Lid handle -->
+  <rect x="15" y="8" width="6" height="3" rx="1.5" fill="#888888"/>
+  <!-- Trash lines -->
+  <line x1="14" y1="18" x2="14" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="18" y1="18" x2="18" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="22" y1="18" x2="22" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Gear -->
+  <g transform="translate(28, 28)">
+    <circle cx="0" cy="0" r="5.5" fill="#A0A0A0"/>
+    <circle cx="0" cy="0" r="3" fill="#404040"/>
+    <circle cx="0" cy="0" r="1.2" fill="#A0A0A0"/>
+    <!-- Gear teeth -->
+    <rect x="-1.2" y="-7" width="2.4" height="3" rx="0.8" fill="#404040"/>
+    <rect x="-1.2" y="4" width="2.4" height="3" rx="0.8" fill="#404040"/>
+    <rect x="-7" y="-1.2" width="3" height="2.4" rx="0.8" fill="#404040"/>
+    <rect x="4" y="-1.2" width="3" height="2.4" rx="0.8" fill="#404040"/>
+    <!-- Diagonal teeth -->
+    <rect x="-1.2" y="-7" width="2.4" height="3" rx="0.8" fill="#404040" transform="rotate(45)"/>
+    <rect x="-1.2" y="4" width="2.4" height="3" rx="0.8" fill="#404040" transform="rotate(45)"/>
+    <rect x="-7" y="-1.2" width="3" height="2.4" rx="0.8" fill="#404040" transform="rotate(45)"/>
+    <rect x="4" y="-1.2" width="3" height="2.4" rx="0.8" fill="#404040" transform="rotate(45)"/>
+  </g>
+</svg>

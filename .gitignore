@@ -1,0 +1,26 @@
+# Build
+build/
+out/
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ Platform Plugin SDK
+.intellijPlatform/
+
+# Kotlin
+.kotlin/
+
+# IDE
+.idea/
+local.properties
+
+# OS
+.DS_Store
+
+# Java heap dumps
+*.hprof
+
+# Distribution zips in root
+*.zip
