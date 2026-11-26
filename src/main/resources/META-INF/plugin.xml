@@ -1,7 +1,6 @@
 <idea-plugin>
     <id>com.clearstorage.clear-storage-plugin</id>
     <name>Clear App Storage Before Deploy</name>
-    <version>1.0.0</version>
     <vendor>Pavel Indziukou</vendor>
 
     <description><![CDATA[
@@ -34,6 +33,12 @@
     ]]></description>
 
     <change-notes><![CDATA[
+<h3>1.0.1</h3>
+<ul>
+    <li>Compatibility with Android Studio 2026.2 (build 262) and later: removed the until-build limit</li>
+    <li>Toolbar state is now computed off the UI thread (fixes "call on EDT" freeze reports)</li>
+    <li>Kotlin stdlib is no longer bundled: smaller plugin, no classloader conflicts</li>
+</ul>
 <h3>1.0.0</h3>
 <ul>
     <li>Initial release</li>
@@ -54,6 +59,4 @@
             <add-to-group anchor="first" group-id="ToolbarRunGroup" />
         </action>
     </actions>
-
-    <extensions defaultExtensionNs="com.intellij"></extensions>
 </idea-plugin>
